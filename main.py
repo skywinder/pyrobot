@@ -5,5 +5,5 @@
 
 from pyrogram import Client
 
-app = Client("my_account")
+app = Client("my_account2+66616134178")
 app.run()
