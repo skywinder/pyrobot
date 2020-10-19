@@ -1,9 +1,12 @@
+from pyrogram import Client
+import datetime
+
+
+with Client("my_account") as app:
+    now = datetime.datetime.now()
+    app.send_message("me", "Greetings from **Pyrogram**! %s" % str(now)[:19] )
+#
 # from pyrogram import Client
 #
-# with Client("my_account", api_id, api_hash) as app:
-#     app.send_message("me", "Greetings from **Pyrogram**!")
-
-from pyrogram import Client
-
-app = Client("my_account2+66616134178")
-app.run()
+# app = Client("my_account")
+# app.run()
